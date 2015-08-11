@@ -1,10 +1,10 @@
-<h1>New Article</h1>
+<h1>Edit Article</h1>
 
-<%= form_for :article, {url: articles_path} do |f| %>
+<%= form_for :article, url: article_path(@article.id), method: :put do |f| %>
 
     <% if @article.errors.any? %>
         <% @article.errors.full_messages.each do |msg| %>
-            <%= msg %><br ?
+            <%= msg %><br />
         <% end %>
     <% end %>
     <%= f.label :title %>
