@@ -4,7 +4,7 @@
 
     <% if @article.errors.any? %>
         <% @article.errors.full_messages.each do |msg| %>
-            <%= msg %><br ?
+            <%= msg %><br>
         <% end %>
     <% end %>
     <%= f.label :title %>
