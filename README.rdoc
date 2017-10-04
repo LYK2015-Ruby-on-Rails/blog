@@ -3,5 +3,5 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-This is a simple Blog application develpoed using Ruby on Rails.
+This is a simple Blog application developed using Ruby on Rails.
 
