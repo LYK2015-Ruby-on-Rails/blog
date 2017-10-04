@@ -1,7 +1,8 @@
 <h1><%= @article.title %></h1>
-
-<%= @article.content %>
-
-
+Submited <%= time_ago_in_words(@article.created_at) %> Ago
+<%=simple_format(@article.content).html_safe %>
+<%= link_to 'Edit', edit_article_path(@article) %>
+	| <%= link_to 'Delete', article_path(@article), method: :delete, data: { confirm: 'Are you sure?' } %>
 <br>
+
 <a href="<%= articles_path %>">List all articles</a>
